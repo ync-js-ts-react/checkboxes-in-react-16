@@ -15,6 +15,7 @@ class App extends Component {
   };
 
   selectAllCheckboxes = isSelected => {
+    console.log('checkboxes', this.state.checkboxes);
     Object.keys(this.state.checkboxes).forEach(checkbox => {
       // BONUS: Can you explain why we pass updater function to setState instead of an object?
       this.setState(prevState => ({
